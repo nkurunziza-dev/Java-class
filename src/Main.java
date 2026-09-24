@@ -1,66 +1,70 @@
-public class Main {
+import java.util.Scanner;
 
+public class Main {
     public static void main(String[] args){
 
-        //this is my first Java program
+//        Scanner scanner = new Scanner(System.in);
 
-        /*
-        * this a
-        * multiline
-        * comment
-        * in java
-        * */
+//        System.out.print("Enter your name: ");
+//        String name = scanner.nextLine();
+//
+//        System.out.print("Enter your age: ");
+//        int age = scanner.nextInt();
+//
+//        System.out.print("What is your gpa: ");
+//        double gpa = scanner.nextDouble();
+//
+//        System.out.print("Are you a student? (true/false): ");
+//        boolean isStudent = scanner.nextBoolean();
+//
+//        System.out.println("Hello, " + name);
+//        System.out.println("Your are: " + age + " years old");
+//        System.out.println("Your gpa is: " + gpa);
+//        System.out.println("Student: " + isStudent);
+//
+//        if (isStudent) {
+//            System.out.println("You are enrolled as a student");
+//        }
+//        else {
+//            System.out.println("You are not enrolled");
+//        }
 
-        //uncomment this to see the result
-//        System.out.println("I like coding");
-//        System.out.println("I like java");
-//        System.out.println("Teach me Java");
-//        System.out.println("shortcut");
+//        common issues
+//        System.out.print("Enter your age: ");
+//        int age = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        System.out.print("Enter your favorite color: ");
+//        String color = scanner.nextLine();
+//
+//        System.out.println("You are " + age + " years old");
+//        System.out.println("You like the color: " + color);
 
+//        scanner.close();
 
+//        exercise
+//        Calculate area of a rectangle
 
-        // int
+        double width = 0;
+        double height = 0;
+        double area = 0;
 
-        int age = 19;
-//        int year = 2026;
+        Scanner scanner =  new Scanner(System.in);
 
-        //uncomment this to see the result
-        //System.out.println("We are in " + year);
-        //System.out.println("I am " + age);
+        System.out.print("Enter width: ");
+        width = scanner.nextDouble();
 
-        double price = 19.99;
-//        double gpa = 3.5;
-//        double temperature = -12.5;
+        System.out.print("Enter height: ");
+        height = scanner.nextDouble();
 
-        //uncomment this to see the result
-        //System.out.println("$" + price);
-        //System.out.println(gpa);
-        //System.out.println("the temperature degree is " + temperature);
+//        System.out.print("Enter area: ");
+//        area = scanner.nextDouble();
 
-//        char grade = 'B';
-//        char symbol = '?';
-        char currency = '$';
+        area = width * height;
 
-        //uncomment this to see the result
-//        System.out.println(grade);
-        //System.out.println(symbol);
-        //System.out.println(currency);
+        System.out.println("The area of the circle is " + area + "m");
 
-        boolean isTeacher;
-
-        if (age < 18) {
-            isTeacher = false;
-//            System.out.println("You are not a teacher");
-        } else if (age >= 18 && age < 19) {
-            isTeacher = true;
-//            System.out.println("You are a teacher");
-        }
-
-        String name = "G. Kevin";
-        String food = "Pizza";
-
-        System.out.println("Hey " + name + " your food is " + food + " which is " + currency + price);
-        System.out.println("Hey your " + age + " years old ");
+        scanner.close();
 
     }
 }
