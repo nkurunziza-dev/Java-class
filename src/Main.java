@@ -3,66 +3,31 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
 
-//        Scanner scanner = new Scanner(System.in);
+//        Mad Libs Game
 
-//        System.out.print("Enter your name: ");
-//        String name = scanner.nextLine();
-//
-//        System.out.print("Enter your age: ");
-//        int age = scanner.nextInt();
-//
-//        System.out.print("What is your gpa: ");
-//        double gpa = scanner.nextDouble();
-//
-//        System.out.print("Are you a student? (true/false): ");
-//        boolean isStudent = scanner.nextBoolean();
-//
-//        System.out.println("Hello, " + name);
-//        System.out.println("Your are: " + age + " years old");
-//        System.out.println("Your gpa is: " + gpa);
-//        System.out.println("Student: " + isStudent);
-//
-//        if (isStudent) {
-//            System.out.println("You are enrolled as a student");
-//        }
-//        else {
-//            System.out.println("You are not enrolled");
-//        }
+        Scanner scanner = new Scanner(System.in);
 
-//        common issues
-//        System.out.print("Enter your age: ");
-//        int age = scanner.nextInt();
-//        scanner.nextLine();
-//
-//        System.out.print("Enter your favorite color: ");
-//        String color = scanner.nextLine();
-//
-//        System.out.println("You are " + age + " years old");
-//        System.out.println("You like the color: " + color);
+        String adjective1;
+        String noun1;
+        String adjective2;
+        String verb1;
+        String adjective3;
 
-//        scanner.close();
+        System.out.print("Enter an adjective (description): ");
+        adjective1 = scanner.nextLine();
+        System.out.print("Enter a noun (animal/person): ");
+        noun1 = scanner.nextLine();
+        System.out.print("Enter an adjective (description): ");
+        adjective2 = scanner.nextLine();
+        System.out.print("Enter a verb (ending -ing, action): ");
+        verb1 = scanner.nextLine();
+        System.out.print("Enter an adjective (description): ");
+        adjective3 = scanner.nextLine();
 
-//        exercise
-//        Calculate area of a rectangle
-
-        double width = 0;
-        double height = 0;
-        double area = 0;
-
-        Scanner scanner =  new Scanner(System.in);
-
-        System.out.print("Enter width: ");
-        width = scanner.nextDouble();
-
-        System.out.print("Enter height: ");
-        height = scanner.nextDouble();
-
-//        System.out.print("Enter area: ");
-//        area = scanner.nextDouble();
-
-        area = width * height;
-
-        System.out.println("The area of the circle is " + area + "m");
+        System.out.println("\nToday I went to a " + adjective1 + " zoo");
+        System.out.println("In an exhibit, I saw a " + noun1 + ".");
+        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
+        System.out.println("I was " + adjective3 + "!");
 
         scanner.close();
 
